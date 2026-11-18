@@ -12,6 +12,8 @@ This roadmap outlines the planned development of the GRC Control Test Validator 
 - Implement Pass, Fail and Inconclusive result classifications.
 - Generate a structured CSV results report.
 - Document the control test plan, testing methodology, test cases and audit findings.
+- Create automated Python tests using the unittest framework.
+- Verify six defined test scenarios, with all six tests passing.
 
 ## Phase 2 – Improved Testing and Reporting (Planned)
 

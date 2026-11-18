@@ -95,6 +95,31 @@ The validator reads the fictional CSV files from `sample_data/` and generates th
 
 ## Testing and Documentation
 
+## Automated Testing
+
+The project includes automated Python tests using the built-in `unittest` framework.
+
+Six test scenarios verify that the validator correctly classifies:
+
+- Valid deployment approval.
+- Unapproved deployment.
+- Unauthorised approver.
+- Approval recorded after release.
+- Missing approval record.
+- Missing deployment release timestamp.
+
+**Test execution:**
+
+Run the following command from the project folder:
+
+```bash
+python -m unittest discover -s automated_tests -v
+```
+
+**Latest test results:** All six automated tests passed.
+
+These tests validate the current testing logic against the defined scenarios. They do not establish that every possible condition has been tested or that the prototype is production-ready.
+
 The project includes supporting documentation covering:
 
 - Control objectives and testing criteria.

@@ -1,25 +1,31 @@
 # Test Cases
 
-## Project: GRC Control Test Validator
+## 1. Project Overview
 
-These test cases verify whether the validator correctly evaluates production deployment approval evidence.
+**Project:** GRC Control Test Validator
 
-All test data is fictional.
+**Control tested:** Production Deployment Approval Control
 
-| Test ID | Deployment ID | Scenario | Expected Result |
+**Purpose:** To verify that the validator correctly evaluates production deployment approval evidence against predefined testing criteria.
+
+All test data is fictional and created solely for this project.
+
+## 2. Test Scenarios
+
+| Test ID | Deployment ID | Test Scenario | Expected Result |
 |---|---|---|---|
-| TC-001 | DEP-001 | Approved by an authorised person before release | Pass |
-| TC-002 | DEP-002 | Deployment does not have an approved status | Fail |
-| TC-003 | DEP-003 | Approval given by an unauthorised person | Fail |
-| TC-004 | DEP-004 | Approval recorded at or after release | Fail |
-| TC-005 | DEP-005 | No matching approval record supplied | Inconclusive |
-| TC-006 | DEP-006 | Release timestamp is missing | Inconclusive |
+| TC-001 | DEP-001 | Approval is documented, the approver is authorised, and approval occurred before release. | Pass |
+| TC-002 | DEP-002 | Deployment does not have an approved status. | Fail |
+| TC-003 | DEP-003 | Approval was given by an unauthorised approver. | Fail |
+| TC-004 | DEP-004 | Approval was recorded after the deployment release time. | Fail |
+| TC-005 | DEP-005 | No matching approval record exists in the supplied register. | Inconclusive |
+| TC-006 | DEP-006 | Deployment release timestamp is missing. | Inconclusive |
 
-## Test Execution Results
+## 3. Test Execution Results
 
-The validator was executed against all six fictional deployment records.
+The validator was executed against all six fictional production deployment records.
 
-| Test ID | Expected Result | Actual Result | Status |
+| Test ID | Expected Result | Actual Result | Test Outcome |
 |---|---|---|---|
 | TC-001 | Pass | Pass | Matched |
 | TC-002 | Fail | Fail | Matched |
@@ -28,14 +34,23 @@ The validator was executed against all six fictional deployment records.
 | TC-005 | Inconclusive | Inconclusive | Matched |
 | TC-006 | Inconclusive | Inconclusive | Matched |
 
-## Overall Test Outcome
+## 4. Overall Test Outcome
 
 All six test cases produced the expected results.
 
-- Pass: 1
-- Fail: 3
-- Inconclusive: 2
+| Result | Count |
+|---|---:|
+| Pass | 1 |
+| Fail | 3 |
+| Inconclusive | 2 |
+| **Total** | **6** |
 
-## Testing Limitation
+**Test execution outcome:** All six test cases matched their expected results.
 
-The test cases validate the current prototype's defined rules using fictional CSV records. They do not establish that the validator is suitable for production use or that the underlying control is effective across an entire organisation.
+## 5. Testing Limitations
+
+The test cases validate the current prototype's predefined rules using fictional CSV records.
+
+They do not establish that the validator is suitable for production use, that all possible scenarios have been tested, or that the underlying control is effective across an entire organisation.
+
+The results demonstrate that the current prototype produces the expected outcomes for the six defined test scenarios.

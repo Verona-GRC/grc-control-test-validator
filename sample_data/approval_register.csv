@@ -1,0 +1,5 @@
+deployment_id,approval_status,approver,authorised_approver,approval_time
+DEP-001,Approved,Alex Tan,Yes,2026-10-01 08:30:00
+DEP-002,Not Approved,,No,
+DEP-003,Approved,Jordan Lee,No,2026-10-01 10:30:00
+DEP-004,Approved,Alex Tan,Yes,2026-10-01 12:15:00

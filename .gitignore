@@ -1,0 +1,14 @@
+# Backup files
+approval_register_backup.csv
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Temporary files
+*.tmp
+*.bak
+
+# Operating system files
+.DS_Store
+Thumbs.db

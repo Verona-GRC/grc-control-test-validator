@@ -1,0 +1,7 @@
+deployment_id,environment,release_time,outcome
+DEP-001,Production,2026-10-01 09:00:00,Success
+DEP-002,Production,2026-10-01 10:00:00,Success
+DEP-003,Production,2026-10-01 11:00:00,Success
+DEP-004,Production,2026-10-01 12:00:00,Success
+DEP-005,Production,2026-10-01 13:00:00,Success
+DEP-006,Production,,Success

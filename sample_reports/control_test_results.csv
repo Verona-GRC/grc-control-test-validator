@@ -1,0 +1,7 @@
+deployment_id,environment,result,explanation
+DEP-001,Production,Pass,Documented approval by an authorised person occurred before release.
+DEP-002,Production,Fail,Deployment does not have an approved status.
+DEP-003,Production,Fail,Approval was not given by an authorised approver.
+DEP-004,Production,Fail,Approval was recorded at or after the release time.
+DEP-005,Production,Inconclusive,No matching approval record found in the supplied register. Check other possible approval sources.
+DEP-006,Production,Inconclusive,Release timestamp is missing or invalid.
